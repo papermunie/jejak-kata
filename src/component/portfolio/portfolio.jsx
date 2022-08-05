@@ -7,14 +7,14 @@ const portfolio = () => {
   return (
     <section id='portfolio'>
       <h5>My Recent Project</h5>
-      <h2>Portfolio</h2>
+      <h2>Membuat Form Login</h2>
 
       <div className='container portfolio__container'>
         <article className='portfolio__item'>
           <div className='portfolio__item-image'>
             <img src={IMG1} alt='' style={{ width: '300px' }}/>
           </div>
-          <h3>This Is a portfolio item title</h3>
+          <h3>This Is a form login input type</h3>
           <div className='portfolio__item-cta'>
             <a href='https://github.com' className='btn' target='_blank'>Github</a>
           </div>
@@ -23,7 +23,7 @@ const portfolio = () => {
           <div className='portfolio__item-image'>
             <img src={IMG2} alt='' style={{ width: '300px' }}/>
           </div>
-          <h3>This Is a portfolio item title</h3>
+          <h3>This Is a form login Javascript CSS</h3>
           <div className='portfolio__item-cta'>
             <a href='https://github.com' className='btn' target='_blank'>Github</a>
           </div>
