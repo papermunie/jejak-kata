@@ -36,9 +36,9 @@ const about = () => {
               <IoMdContact className="about__icon" />
               <h5>Skills</h5>
               <small></small>
-              <small>public speaking</small>
-              <small>problem solving</small>
-              <small>managemen self</small>
+              <div>public speaking </div>
+              <div>problem solving </div>
+              <div>managemen self </div>
             </article> 
   
         </div>
