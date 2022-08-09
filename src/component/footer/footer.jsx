@@ -7,7 +7,7 @@ import {BsYoutube} from 'react-icons/bs'
 const Footer = () => { 
 return (
   <footer id='footer'>
-    <a href='#' className='footer__logo'>SALWA RINDU KANAYA SMKN 1 KOTA BEKASI</a>
+    <a href='#' className='footer__logo'>SALWA RINDU KANAYA</a>
 
     <div className='footer__social'>
       <a href="https://instagram.com/salwarky?igshid=YmMyMTA2M2Y=" target="_blank"><RiInstagramLine/></a>
