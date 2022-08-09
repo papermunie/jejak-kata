@@ -1,23 +1,23 @@
-import React from 'react'
 import './nav.css'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
 import {AiOutlineFile} from 'react-icons/ai'
 import {AiOutlineMessage} from 'react-icons/ai'
-import {useState} from 'react'
+import {Link} from 'react-router-dom'
 
 const Nav = () => {
-    const [ activeNav, setActiveNav] = useState('#') 
     return (
       <nav>
-        <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-        <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-        <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><BiBook/></a>
-        <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#services' ? 'active' : ''}><AiOutlineFile/></a>
-        <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><AiOutlineMessage/></a>
-      </nav>
- )
-} 
+        <ul>
+       <li><Link to='/'> <AiOutlineHome className='object'/> Home</Link></li>
+       <li><Link to='about'> <AiOutlineUser className='object'/> About</Link></li>
+       <li><Link to='experience'> <BiBook className='object'/> Experience</Link></li>
+       <li><Link to='portfolio'> <AiOutlineFile className='object'/> Portfolio</Link></li>
+       <li><Link to='contact'> <AiOutlineMessage className='object'/> Contact</Link></li>
+      </ul>
+    </nav>
+  )
+}
 
 export default Nav
