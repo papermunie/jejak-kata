@@ -5,10 +5,8 @@ import ME from '../../assets/mes.png'
 import HeaderSocials from './HeaderSocials'
 import {FiGithub} from 'react-icons/fi'
 
-const header = ({okeh}) => {
-  const {nama, setNama} = okeh
-  const {daun, setDaun} = okeh
-  const {halo, setHalo} = okeh
+const header = (props) => {
+  const {nama,setNama,daun, setDaun,halo, setHalo} = props.okeh
 
   function orang() {
     setNama ("Salwa Rindu Kanaya");
@@ -28,7 +26,7 @@ const header = ({okeh}) => {
           <h1>{nama}</h1>
           <h5>{daun}</h5>
         </div>
-        <button className='btn btn-primary' onClick={() => {hai(); orang(); kerja(); }}><i><b>TEKAN</b></i></button>
+        <button className='btn btn-primary' onClick={() => {hai(); orang(); kerja(); }}><i><b>CIICK</b></i></button>
         <CTA />
         <HeaderSocials/>
 
