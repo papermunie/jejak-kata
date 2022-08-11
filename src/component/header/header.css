@@ -34,8 +34,11 @@ header{
   font-size: 1.2rem;
 }
 
-.Header__Socials a {
-  color: white;
+.header__socials::after{
+  content: "";
+  width: 1px;
+  height: 2rem;
+  background: var(--color-primary);
 }
 
 /* ================ ME =================== */
@@ -75,15 +78,26 @@ header{
   .scroll__down{
       bottom: 12.5rem;
   }
-}
+  }
+  .github{
+    bottom: 12.5rem;
+  }
+
 
 /* ============== MEDIA QUERIES (SMALL DEVICES) ============== */
 @media screen and (max-width: 600px){
   header{
-      height: 150vh;
+    height: 175vh;
   }   
 
-  .Header__Socials, .scroll__down{
+  .header__socials{
       display: none;
+  }
+
+  .github{
+      transform: rotate(0deg);
+      bottom: 1rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
   }
 }
