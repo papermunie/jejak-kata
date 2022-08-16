@@ -1,6 +1,6 @@
+import './nav.css'
 import { useState } from "react";
 import * as React from "react";
-import './nav.css'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
 import {BiBook} from 'react-icons/bi'
@@ -13,10 +13,10 @@ import { Box } from "@mui/material";
 const array = [
       <ul>
        <li><Link to='/'> <AiOutlineHome className='object'/> Home</Link></li>
-       <li><Link to='about'> <AiOutlineUser className='object'/> About</Link></li>
-       <li><Link to='experience'> <BiBook className='object'/> Experience</Link></li>
-       <li><Link to='portfolio'> <AiOutlineFile className='object'/> Portfolio</Link></li>
-       <li><Link to='contact'> <BsTelephone className='object'/> Contact</Link></li>
+       <li><Link to='/about'> <AiOutlineUser className='object'/> About</Link></li>
+       <li><Link to='/experience'> <BiBook className='object'/> Experience</Link></li>
+       <li><Link to='/portfolio'> <AiOutlineFile className='object'/> Portfolio</Link></li>
+       <li><Link to='/contact'> <BsTelephone className='object'/> Contact</Link></li>
       </ul>
 ];
 
@@ -33,8 +33,7 @@ const Nav = () => {
         </ListItem>
       </List>
       <Collapse in={open}>
-
-      <List sx={{marginLeft: 25}}>
+      <List sx={{marginLeft: 0}}>
         {array.map((listElm) => (
           <ListItem divider>
             <ListItemButton onClick={() => setOpen(false)}>

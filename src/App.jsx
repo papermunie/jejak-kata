@@ -6,7 +6,7 @@ import Experience from './component/experience/experience'
 import Portfolio from './component/portfolio/portfolio'
 import Footer from './component/footer/footer'
 import Contact from './component/contact/contact'
-import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 const App = () => {
   const [halo, setHalo] = useState('')

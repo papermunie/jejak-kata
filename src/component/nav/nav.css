@@ -1,5 +1,6 @@
 ul { 
   list-style-type: none; 
+  display: grid;
   margin: 0; 
   padding: 0; 
   overflow: hidden; 
@@ -25,7 +26,7 @@ background-color: var(--color-bg);
 } 
 
 li a { 
-  display: block; 
+  display: inline-block; 
   color: white; 
   text-align: center; 
   padding: 13px 20px; 
