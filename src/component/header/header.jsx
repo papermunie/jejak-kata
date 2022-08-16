@@ -9,13 +9,13 @@ const header = (props) => {
   const {nama,setNama,daun, setDaun,halo, setHalo} = props.okeh
 
   function orang() {
-    setNama ("Salwa Rindu Kanaya");
+    setNama ("Its Me Salwa");
   }
   function kerja() {
-    setDaun ("SMKN 1 KOTA BEKASI")
+    setDaun ("Have a nice day y'all")
   }
   function hai(){
-    setHalo("Halooo I'm")
+    setHalo("Get To Know Me")
   }
 
   return (
